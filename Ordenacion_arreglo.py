@@ -3,7 +3,7 @@
 
 # Matriz 3x3 con valores numéricos
 matriz = [
-    [9, 3, 5],
+    [9, 3, 5],0
     [7, 2, 8],
     [6, 4, 1]
 ]
@@ -25,7 +25,7 @@ def ordenar_fila_bubble(matriz, fila_index):
     return matriz
 
 # Solicitar al usuario qué fila desea ordenar
-indice = int(input("\n🔧 Ingresa el número de fila que deseas ordenar (0, 1 o 2): "))
+indice = int(input("\n Ingresa el número de fila que deseas ordenar (0, 1 o 2): "))
 
 # Validar el índice y aplicar la ordenación
 if 0 <= indice < len(matriz):
