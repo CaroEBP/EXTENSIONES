@@ -25,12 +25,12 @@ temperaturas = [
 
 # Recorrer la matriz correctamente
 for ciudad_idx, ciudad in enumerate(temperaturas):
-    print(f"\n🌆 Ciudad: {ciudades[ciudad_idx]}")
+    print(f"\n Ciudad: {ciudades[ciudad_idx]}")
     for semana_idx, semana in enumerate(ciudad):
-        print(f"📅 Semana {semana_idx + 1}")
+        print(f" Semana {semana_idx + 1}")
         suma = 0
         for dia_idx, temp in enumerate(semana):
             print(f"   {dias[dia_idx]}: {temp}°C")
             suma += temp
         promedio = suma / len(semana)
-        print(f"🔎 Promedio semana {semana_idx + 1}: {promedio:.2f}°C")
+        print(f" Promedio semana {semana_idx + 1}: {promedio:.2f}°C")
